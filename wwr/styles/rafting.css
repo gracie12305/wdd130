@@ -1,0 +1,60 @@
+:root {
+	--heading-background-color: orange;
+    --heading-font:black, bold;
+    --padding: 1rem
+    --margin: 2re m auto;
+    --border:1px solid rgb(0 0 0 0 / 20%)
+    
+
+}
+
+main{
+    max-width: 700px;
+    text-align: center;
+    text-decoration-color: rgb(79, 79, 211) ;
+}
+
+main img{
+    width: 100%;
+
+}
+
+main h1{
+    text-align: center;
+    text-decoration-color: rgb(27, 1, 99);
+
+}
+
+aside h2{
+    text-align: center;
+    text-decoration-color: rgb(27, 1, 99);
+}
+
+article img{
+    float: right;
+    width: 150px;
+    height: auto;
+
+}
+
+footer{
+    margin-top: 10px;
+    background-color: orange;
+    text-align: center;
+}
+
+footer img{
+    /* moving the footer images to the right */
+    float: right;
+}
+
+
+.box{
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 0;
+ }
+
+ p {
+    padding: 10px;
+}
