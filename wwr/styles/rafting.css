@@ -11,22 +11,24 @@
 main{
     max-width: 700px;
     text-decoration-color: rgb(79, 79, 211) ;
+
 }
 
-main img{
-    float: right;
-}
 
 .hero img{
-    display:block;
     width: 100%;
     height: auto;
-    object-fit: cover;
+    display: block;
 
 
 }
 
-main h1{
+.hero{
+    position: relative;
+}
+
+
+h1{
     position: absolute;
     text-decoration-color: rgb(27, 1, 99);
 
@@ -37,19 +39,29 @@ aside h2{
     text-decoration-color: rgb(27, 1, 99);
 }
 
-article{
-    position: absolute
-}
 
 
 article img{
-    width: 150px;
+    top: 0px;
+    width: 200px;
     height: auto;
-    padding: 0;
+    box-shadow: 0 0 4px black;
+    align-self: right;
+
     /* Moving the article image to the right  */
     float: right;
+}
 
+article{
+    position: absolute;
+}
 
+article p{
+    background-color: light rgb(168, 212, 79) transparent;
+}
+
+.float-right{
+    float: right;
 }
 
 footer{
@@ -57,6 +69,7 @@ footer{
     background-color: orange;
     text-align: center;
     text-decoration: none;
+    position: bottom;
 }
 
 
