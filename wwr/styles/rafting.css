@@ -10,17 +10,24 @@
 
 main{
     max-width: 700px;
-    text-align: center;
     text-decoration-color: rgb(79, 79, 211) ;
 }
 
 main img{
+    float: right;
+}
+
+.hero img{
+    display:block;
     width: 100%;
+    height: auto;
+    object-fit: cover;
+
 
 }
 
 main h1{
-    text-align: center;
+    position: absolute;
     text-decoration-color: rgb(27, 1, 99);
 
 }
@@ -30,10 +37,18 @@ aside h2{
     text-decoration-color: rgb(27, 1, 99);
 }
 
+article{
+    position: absolute
+}
+
+
 article img{
-    float: right;
     width: 150px;
     height: auto;
+    padding: 0;
+    /* Moving the article image to the right  */
+    float: right;
+
 
 }
 
@@ -41,7 +56,9 @@ footer{
     margin-top: 10px;
     background-color: orange;
     text-align: center;
+    text-decoration: none;
 }
+
 
 footer img{
     /* moving the footer images to the right */
@@ -57,4 +74,8 @@ footer img{
 
  p {
     padding: 10px;
+}
+
+div{
+    position: relative;
 }
