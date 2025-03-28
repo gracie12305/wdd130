@@ -2,7 +2,7 @@
 	--heading-background-color: orange;
     --heading-font:black, bold;
     --padding: 1rem
-    --margin: 2re m auto;
+    --margin: 2rem auto;
     --border:1px solid rgb(0 0 0 0 / 20%)
     
 
@@ -27,12 +27,35 @@ main{
     position: relative;
 }
 
-
-h1{
+.hero h1 {
     position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 45%;
+    left: 5%;
+    background-color: light rgb(168, 212, 79) transparent;
     text-decoration-color: rgb(27, 1, 99);
+   
+}
+
+.hero article img {
+    width: 150px;
+    float: right;
+    margin-right: 10px;
+    box-shadow: 0 0 4px black;
+    padding: 0;
+    bottom: 30%;
 
 }
+
+
 
 aside h2{
     text-align: center;
@@ -41,28 +64,14 @@ aside h2{
 
 
 
-article img{
-    top: 0px;
-    width: 200px;
-    height: auto;
-    box-shadow: 0 0 4px black;
-    align-self: right;
-
-    /* Moving the article image to the right  */
-    float: right;
-}
 
 article{
     position: absolute;
 }
 
-article p{
-    background-color: light rgb(168, 212, 79) transparent;
-}
 
-.float-right{
-    float: right;
-}
+
+
 
 footer{
     margin-top: 10px;
