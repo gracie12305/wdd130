@@ -11,7 +11,7 @@
 main{
     max-width: 700px;
     text-decoration-color: rgb(79, 79, 211) ;
-
+    align-content: center;
 }
 
 
@@ -101,3 +101,71 @@ footer img{
 div{
     position: relative;
 }
+
+header{
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    border-bottom: 2px solid green;
+    max-width: 1000px;
+    padding: 20px;
+
+    
+}
+
+header img.logo {
+    width: 64px; /* Adjust logo size */
+    height: auto;
+    margin: 0 0.25rem 0 0.45rem;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+.navigation{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 0 auto;
+    list-style: none;
+    justify-content: space-around;
+
+}
+
+.navigation li{
+    flex: 1 1 auto;
+}
+
+.navigation a{
+    width: 250px;
+    display: block;
+    color: orangered;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.navigation a:hover{
+    color: green;
+    text-decoration: dotted;
+}
+
+a{
+    min-height: 25px;
+}
+
+aside {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  aside img {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+  
+
+
+
+
