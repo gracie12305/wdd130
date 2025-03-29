@@ -9,9 +9,10 @@
 }
 
 main{
-    max-width: 700px;
     text-decoration-color: rgb(79, 79, 211) ;
     align-content: center;
+    border:1px solid rgb(0 0 0 0 / 20%)
+
 }
 
 
@@ -32,7 +33,7 @@ main{
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -42,7 +43,7 @@ main{
     left: 5%;
     background-color: light rgb(168, 212, 79) transparent;
     text-decoration-color: rgb(27, 1, 99);
-   
+    font-size: 1.45rem;
 }
 
 .hero article img {
@@ -60,6 +61,38 @@ main{
 aside h2{
     text-align: center;
     text-decoration-color: rgb(27, 1, 99);
+}
+
+.History{
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+
+}
+
+.History img{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.adventure{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column: 1/1 2/3;
+    grid-row: 1/2;
+    gap: 10px;
+    justify-items: center;
+
+}
+
+
+.adventure p{
+    text-align: center;
+
+}
+
+.adventure img{
+    width: 200px;
+    height: auto;
 }
 
 
@@ -83,6 +116,9 @@ footer{
 
 
 footer img{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
     /* moving the footer images to the right */
     float: right;
 }
@@ -105,7 +141,7 @@ div{
 header{
     margin: 1rem auto;
     display: grid;
-    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-template-columns: 200px 1fr 1fr;
     border-bottom: 2px solid green;
     max-width: 1000px;
     padding: 20px;
@@ -121,7 +157,7 @@ header img.logo {
   
   header h1 {
     font-size: 2rem;
-    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
 
 .navigation{
@@ -133,21 +169,18 @@ header img.logo {
 
 }
 
-.navigation li{
-    flex: 1 1 auto;
-}
+
 
 .navigation a{
     width: 250px;
-    display: block;
     color: orangered;
     padding: 20px;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
 }
 
 .navigation a:hover{
     color: green;
-    text-decoration: dotted;
 }
 
 a{
