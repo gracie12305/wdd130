@@ -63,7 +63,8 @@ main{
 
 
 
-aside h2{
+.History h2{
+    font: 3rem;
     text-align: center;
     text-decoration-color: rgb(27, 1, 99);
 }
@@ -71,12 +72,15 @@ aside h2{
 .History{
     display: grid;
     grid-template-columns:  1fr 300px 1fr;
-
 }
 
 .History img{
     grid-column: 2;
     grid-row: 1;
+}
+
+.History p{
+    text-align: start;
 }
 
 .adventure{
@@ -89,14 +93,43 @@ aside h2{
 
 }
 
+.adventure-gallery{
+    border: thin #c7f573 solid;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+    width: 200px;
+    margin: auto;
+}
 
-.adventure p{
+
+.adventure-gallery figure {
+    width: 18%; /* Adjust based on available space */
+    margin: 0;
     text-align: center;
+}
+
+.adventure h2{
+    position: absolute;
+    top: 183%;
+    left: 43%;
+    text-align: center;
+    margin-bottom: 1rem; 
+    font-size: 2rem;
+}
+
+
+figcaption{
+    background-color: orangered;
+    color: #fff;
+    text-align: center;
+    font: italic smaller sans-serif;
+    padding: 2px;
 
 }
 
-.adventure img{
-    width: 200px;
+figure img{
+    width: 280px;
     height: auto;
 }
 
@@ -117,18 +150,27 @@ footer{
     text-align: center;
     text-decoration: none;
     position: bottom;
+
+
+}
+
+.media{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1 rem;
+}
+
+.media a {
+    display: inline-block;
 }
 
 
 footer img{
-    width: 50px;
+    width: 40px;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
     list-style: none;
     /* moving the footer images to the right */
     float: right;
-    gap: 10px;
 }
 
 
