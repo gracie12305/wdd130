@@ -1,11 +1,16 @@
 :root {
-	--heading-background-color: orange;
+	--primary-color: whitesmoke;
     --heading-font:black, bold;
-    --padding: 1rem
-    --margin: 2rem auto;
-    --border:1px solid rgb(0 0 0 0 / 20%)
-    
+    --secondary-color: rgb(221, 221, 80);
+    --accent1-color: rgb(79, 79, 211);
+    --accent2-color: rgb(27, 1, 99);
+    --body-font: "Playfair Display":
+}
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .merriweather{
@@ -15,7 +20,18 @@
 }
 
 body {
-    font-family: 'Merriweather', serif;
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+  }
+
+  header, main, footer{
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  nav, p, section, article{
+    margin: 16px;
+    padding: 8px;
   }
 
 main{
@@ -39,37 +55,48 @@ main{
 }
 
 .hero h1 {
+    width: 1000px;
     position: absolute;
-    top: 10%;
-    left: 50%;
+    top: 50px;
+    width: 100%;
+    padding: 16px;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
     transform: translate(-50%, -50%);
-    font-size: 3rem;
+    font-size: 2rem;
+    left: 49.2%;
+    text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+
 .hero article {
     position: absolute;
-    bottom: 45%;
+    bottom: 40%;
     left: 5%;
-    background-color: light rgb(168, 212, 79) transparent;
+    background-color: light rgb(168, 212, 79);
     text-decoration-color: rgb(27, 1, 99);
     font-size: 1.45rem;
 }
 
 .hero article img {
-    width: 150px;
+    width: 200px;
+    height: 150px;
     float: right;
-    margin-right: 10px;
-    box-shadow: 0 0 4px black;
+    margin-right: 40px;
+    margin-top:px;
+    box-shadow: 0 0 4px orangered;
     padding: 0;
-    bottom: 30%;
+    border: 2px;
+
 
 }
 
 
 
-.History h2{
-    font: 3rem;
+h2{
+    font-size: 2rem;
     text-align: center;
     text-decoration-color: rgb(27, 1, 99);
 }
@@ -77,6 +104,7 @@ main{
 .History{
     display: grid;
     grid-template-columns:  1fr 300px 1fr;
+
 }
 
 .History img{
@@ -91,7 +119,7 @@ main{
 .adventure{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-column: 1/1 2/3;
+    grid-column: 1/1;
     grid-row: 1/2;
     gap: 10px;
     justify-items: center;
@@ -100,7 +128,7 @@ main{
 
 
 
-.adventure-gallery{
+.adventure img{
     border: thin #c7f573 solid;
     display: flex;
     flex-wrap: wrap;
@@ -110,15 +138,15 @@ main{
 }
 
 
-.adventure-gallery figure {
-    width: 18%; /* Adjust based on available space */
+.adventure img figure {
+    width: 25%; /* Adjust based on available space */
     margin: 0;
     text-align: center;
 }
 
 .adventure h2{
     position: absolute;
-    top: 183%;
+    top: 135%;
     left: 43%;
     text-align: center;
     margin-bottom: 1rem; 
@@ -156,8 +184,7 @@ footer{
     background-color: orange;
     text-align: center;
     text-decoration: none;
-    position: bottom;
-
+    position: relative;
 
 }
 
@@ -195,7 +222,9 @@ div{
     position: relative;
 }
 
-header{
+header{ 
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
     margin: 1rem auto;
     display: grid;
     grid-template-columns: 200px 1fr 1fr;
@@ -312,9 +341,102 @@ h1{
 }
 
 .google-map{
-    width: 600; 
-    height: 450;
+    width: 600px; 
+    height: 450px;
 }
+
+.employees{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.employees img{
+    border: thin #84e2ee solid;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+    width: 250px;
+}
+
+.cta {
+    text-align: center;
+    padding: 2rem;
+  }
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .info-item img {
+    width: 350px;
+    height: auto;
+  }
+  .info-item h3 {
+    margin-top: 0.5rem;
+  }
+  
+  .singup-form {
+    background: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+  }
+  .signup-form input,
+  .signup-form button {
+    margin: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .signup-form input[type="text"],
+  .signup_form input[type="email"] {
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.5rem;
+  }
+  
+  .signup-form button {
+    padding: 0.75rem 1.5rem;
+    background-color: orangered;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-form button:hover {
+    background-color: #005fa3;
+  }
+
+  h4{
+    font-size: 1.5rem;
+  }
+
+
 
 
 
