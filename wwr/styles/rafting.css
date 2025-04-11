@@ -4,7 +4,6 @@
     --secondary-color: rgb(221, 221, 80);
     --accent1-color: rgb(79, 79, 211);
     --accent2-color: rgb(27, 1, 99);
-    --body-font: "Playfair Display":
 }
 
 *{
@@ -13,8 +12,8 @@
     box-sizing: border-box;
 }
 
-.merriweather{
-    font-family: "Merriweather", serif;
+.winky-sans{
+    font-family: "winky sans", serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -37,7 +36,7 @@ body {
 main{
     text-decoration-color: rgb(79, 79, 211) ;
     align-content: center;
-    border:1px solid rgb(0 0 0 0 / 20%)
+    border:1px solid rgb(0 0 0 0 / 20%);
 
 }
 
@@ -75,7 +74,7 @@ main{
     position: absolute;
     bottom: 40%;
     left: 5%;
-    background-color: light rgb(168, 212, 79);
+    background-color: #bfec64;
     text-decoration-color: rgb(27, 1, 99);
     font-size: 1.45rem;
 }
@@ -85,7 +84,6 @@ main{
     height: 150px;
     float: right;
     margin-right: 40px;
-    margin-top:px;
     box-shadow: 0 0 4px orangered;
     padding: 0;
     border: 2px;
@@ -284,6 +282,8 @@ aside {
     gap: 20px;
   }
 
+  /* CONTACT CSS */
+
   input, select, textarea{
     font-size: 1.5rem ;
     padding: 0.3rem;
@@ -307,7 +307,6 @@ button{
 form{
     width: 500px;
     margin: 1.05rem;
-    padding: px;
     border: 1px solid rgb(56, 1, 1);
     border-radius: 1rem;
     background-color: #f0ffff;
@@ -359,6 +358,7 @@ h1{
     width: 250px;
 }
 
+/* HOME PAGE CSS */
 .cta {
     text-align: center;
     padding: 2rem;
@@ -432,9 +432,55 @@ h1{
     background-color: #005fa3;
   }
 
+  /* TRIPS CSS */
+  .trip-descriptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .trip img {
+    width: 2022px;
+  }
+  
+  .trip-descriptions img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .trip-table{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   h4{
     font-size: 1.5rem;
+    color: orangered;
+    grid-column: 1/4;
+    grid-row: 1/3;
   }
+
+
+  .trip-table table{
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    text-align: left;
+    text-align: center;
+  }
+
+  .trip-table th,
+.trip-table td {
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.trip-table th {
+  background-color: #0077cc;
+  color: white;
+}
 
 
 
