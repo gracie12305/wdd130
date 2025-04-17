@@ -2,7 +2,7 @@
 	--primary-color: whitesmoke;
     --heading-font:black, bold;
     --secondary-color: rgb(221, 221, 80);
-    --accent1-color: rgb(79, 79, 211);
+    --accent1-color: #202080;
     --accent2-color: rgb(27, 1, 99);
 }
 
@@ -20,11 +20,11 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--accent2-color);
   }
 
   header, main, footer{
-    width: 1000px;
+    width: 840px;
     margin: 0 auto;
   }
 
@@ -54,14 +54,14 @@ main{
 }
 
 .hero h1 {
-    width: 1000px;
+    width: 840px;
     position: absolute;
     top: 50px;
     width: 100%;
     padding: 16px;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: var(--accent2-color);
+    color: azure;
     transform: translate(-50%, -50%);
     font-size: 2rem;
     left: 49.2%;
@@ -296,7 +296,7 @@ label, input, button, select, textarea{
 
 button{
     margin: 1rem;
-    color: aquamarine;
+    color: #ffffff;
     background-color: rgb(31, 31, 31);
     border: none;
     border-radius: 1rem;
